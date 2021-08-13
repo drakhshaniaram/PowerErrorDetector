@@ -1,6 +1,6 @@
 # PowerErrorDetector
  A Dynamics AX extention which enables developer to catch various errors and exceptions inculuding: Overal, Transactions, CLRObject errors.
- 
+
 Features:
 * Memory efficient: by using of Singleton design pattern
 * Extensible: by using of X++ Interfaces
@@ -8,7 +8,6 @@ Features:
 
 ## Sample job for using the facility - 1
 ```csharp
-
 static void TEST_PowerLogger(Args _args)
 {
     str err;
