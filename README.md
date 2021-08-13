@@ -19,7 +19,7 @@ static void TEST_PowerLogger(Args _args)
     }
     catch
     {
-	ERR = PowerErrDetector::instance().OveralErr().reveal();
+	err = PowerErrDetector::instance().OveralErr().reveal();
 	if(err)
 	    PowerLogger::instance().LogOnDB().write(err, funcName(), 0, "My sample title");
     }
