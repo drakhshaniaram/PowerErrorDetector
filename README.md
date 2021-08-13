@@ -13,16 +13,16 @@ static void TEST_PowerLogger(Args _args)
     str err;
     ;
 
-	try
-	{
-		throw error("My sample error.");
-	}
-	catch
-	{
-		err = PowerErrDetector::instance().OveralErr().reveal();
-		if(err)
-			PowerLogger::instance().LogOnDB().write(err, funcName(), 0, "My sample title");
-	}
+    try
+    {
+	throw error("My sample error.");
+    }
+    catch
+    {
+	ERR = PowerErrDetector::instance().OveralErr().reveal();
+	if(err)
+	    PowerLogger::instance().LogOnDB().write(err, funcName(), 0, "My sample title");
+    }
 }
 ```
 ## Sample job for using the facility - 2
